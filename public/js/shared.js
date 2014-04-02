@@ -1,5 +1,7 @@
+// create new ember application
 var App = Ember.Application.create();
 
+// equate path / to index resource
 App.Router.map(function() {
 
     this.resource("index", {
@@ -8,6 +10,7 @@ App.Router.map(function() {
 
 });
 
+// message model
 App.Message = DS.Model.extend({
     "user_id"       : DS.attr("integer"),
     "user_name"     : DS.attr("string"),
